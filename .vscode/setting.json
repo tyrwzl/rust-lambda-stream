@@ -1,4 +1,5 @@
 {
-    "rust-analyzer.linkedProjects": ["lambda/Cargo.toml"]
+    "rust-analyzer.linkedProjects": ["lambda_websocket/Cargo.toml",
+    "lambda_response_stream/Cargo.toml"]
 }
   

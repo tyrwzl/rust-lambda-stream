@@ -1,0 +1,19 @@
+[package]
+name = "rust-lambda-stream"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.75"
+async-openai = "0.17.1"
+aws-config = "1.1.1"
+aws-sdk-apigatewaymanagement = "1.7.0"
+futures = "0.3.29"
+hyper = "0.14.27"
+lambda_http =  { version = "0.8", features = ["apigw_websockets"] }
+lambda_runtime = "0.8"
+serde = "1.0"
+serde_json = "1.0"
+tokio = { version = "1", features = ["macros"] }
+tracing = { version = "0.1", features = ["log"] }
+tracing-subscriber = { version = "0.3", default-features = false, features = ["env-filter", "fmt"] }
